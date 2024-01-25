@@ -23,10 +23,12 @@ QUnit.module('DOM', (hooks) => {
 	});
 
 	test("should have a title element that equals 'Reliable, efficient delivery'", (assert) => {
-		const sectionTitleEl = document.querySelector('.section__title');
-		const sectionTitle = sectionTitleEl.textContent.trim();
+		const cardsSummaryTitleEl = document.querySelector(
+			'.cards-summary__title'
+		);
+		const cardsSummaryTitle = cardsSummaryTitleEl.textContent.trim();
 
-		assert.equal(sectionTitle, 'Reliable, efficient delivery');
+		assert.equal(cardsSummaryTitle, 'Reliable, efficient delivery');
 	});
 
 	test('should have two children inside of the section element', (assert) => {
